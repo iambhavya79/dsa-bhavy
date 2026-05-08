@@ -1,0 +1,29 @@
+package oops;
+
+public class getter_setters {
+    public static void main(String[] args) {
+    Pens p1 = new Pens();
+    p1.setColor("blue");
+    System.out.println(p1.getColor());
+    p1.setTip(56);
+    System.out.println(p1.getTip());
+    } 
+}
+class Pens{
+    private String color ;
+    private int tip;
+
+    String getColor(){
+        return this.color;
+    }
+    int getTip(){
+        return this.tip;
+
+    }
+    void setColor(String newColor){
+        this.color = newColor;
+    }
+    void setTip(int newTip){
+        this.tip = newTip;
+    }
+}
